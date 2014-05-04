@@ -8,3 +8,30 @@ bespoke.from('article', {
   state: true,
   forms: true
 });
+
+angular.module('Presentation', [])
+    .controller('DirectiveController', ['$scope', function ($scope) {
+        $scope.customer = {
+            name: 'Naomi',
+            address: '1600 Amphitheatre'
+        };
+    }])
+    .directive('myCustomer', function () {
+        return {
+            template: 'Name: {{customer.name}} Address: {{customer.address}}'
+        };
+    })
+    .controller('ServiceController', ['$scope', 'notify', function ($scope, notify) {
+        $scope.notify = notify;
+    }])
+    .service('notify', ['$window', function ($window) {
+        var msgs = [];
+
+        return function (msg) {
+            msgs.push(msg);
+            if (msgs.length > 2) {
+                $window.alert(msgs);
+                msgs = [];
+            }
+        };
+    }]);
