@@ -19,19 +19,134 @@ html
         div.dd-homepage-logo
           div.dd-homepage-logo-bg
           div.dd-homepage-logo-write
-        h1.dd-homepage-title Talk title
+        h1.dd-homepage-title AngularJS - Javascript framework for superheroes
 
       section.dd-section
         div.dd-section-background
         div.dd-section-logo
-        h2.dd-title Section title
+        h2.dd-title Back in time...
+        h3 ... when the dinosaurs rule the Earth
+        div.js-horizontal-box
+          ul
+            li Websites instead of webapps
+            li Client seen as a dumb interface
+            li All the workload handled by the server
+            li No client-side logic
+            li Javascript coders seen as web designers
+          img.js-old(src='images/slides/old.jpg')
+
+      section.dd-section
+        div.dd-section-background
+        div.dd-section-logo
+        h2.dd-title Get into present days...
+        hr
+        img.js-html5(src='images/slides/html5.jpg')
+        ul
+          li AJAX - HTML5 - CSS3
+          li Web 2.0
+          li Client splitted from server
+          li Lots of new Javascript libraries
+          li Web application
+
+      section.dd-section
+        div.dd-section-background
+        div.dd-section-logo
+        h2.dd-title Javascript: the answer!
+        hr
+        div.js-horizontal-box
+          img.js-old(src='images/slides/napdino.jpg')
+          ul
+            li Javascript framework
+            li MVC Architecture
+            li Big web apps
+
+      section.dd-section
+        div.dd-section-background
+        div.dd-section-logo
+        h2.dd-title A current problem
+        hr
+        div.js-horizontal-box
+          img.js-old(src='images/slides/dafaq.png')
+          ul
+            li Too much time
+            li Too much code
+            li Too much stress
+            li Building client-side webapp is still hard
+            li DOM Manipulation
+            li Data validation
+
+      section.dd-section
+        div.dd-section-background
+        div.dd-section-logo
+        h2.dd-title Angular for the win!
+        hr
+        ul
+          li Data-binding
+          li Basic templating directives
+          li Form validation
+          li Routing
+          li Reusable components
+          li Dependency injection
+          li Unit-testing
+        div.js-horizontal-box
+          img(src='images/slides/superdino.png',style='width:200px')
+          img(src='images/slides/superdino.png',style='width:200px')
+          img(src='images/slides/superdino.png',style='width:200px')
+
+      section.dd-section
+        div.dd-section-background
+        div.dd-section-logo
+        h2.dd-title Bootstrapping
+        hr
+        div.js-horizontal-box
+          img.js-old(src='images/slides/dafaq.png')
+          ul
+            li Load HTML DOM
+            li Load the module associated with the directive
+            li Create the application injector
+            li Compile the DOM treating the ng-app directive as the root of the compilation
+
+      section.dd-section
+        div.dd-section-background
+        div.dd-section-logo
+        h2.dd-title Conceptual overview
+        hr
+        div.js-horizontal-box
+          ol
+            li The browser loads the HTML and parses it into a DOM
+            li The browser loads angular.js script
+            li Angular waits for DOMContentLoaded event
+            li Angular looks for ng-app directive, which designates the application boundary
+            li The Module specified in ng-app (if any) is used to configure the $injector
+            li The $injector is used to create the $compile service as well as $rootScope
+            li The $compile service is used to compile the DOM and link it with $rootScope
+          img.js-old(src='images/slides/concepts-view.png')
+
+      section.dd-section
+        div.dd-section-background
+        div.dd-section-logo
+        h2.dd-title HTML Compiler
+        h3 Compiler is an angular service which traverses the DOM looking for attributes
+        ul
+          li Compile: traverse the DOM and collect all of the directives. The result is a linking function
+          li Link: combine the directives with a scope and produce a live view. Any changes in the scope model are reflected in the view, and any user interactions with the view are reflected in the scope model. This makes the scope model the single source of truth
+
+      section.dd-section
+        div.dd-section-background
+        div.dd-section-logo
+        h2.dd-title Conceptual overview
+        h3 Also knows as Model View - View Model (MVVM)
+        hr
+        div.js-horizontal-box
+          img.js-old(src='images/slides/One_Way_Data_Binding.png')
+          img.js-old(src='images/slides/Two_Way_Data_Binding.png')
 
       section.dd-speaker
         div.dd-speaker-box
           div.dd-speaker-pic
           div.dd-speaker-detail
             div.dd-speaker-detail-container
-              h3.dd-title Speaker Name
+              h3.dd-title Vincenzo Ferrari
 
     // build:js scripts/scripts.js
     script(src='bower_components/bespoke.js/dist/bespoke.min.js')
