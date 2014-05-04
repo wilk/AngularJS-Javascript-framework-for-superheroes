@@ -1,163 +1,344 @@
 doctype html
 html
-  head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
-    title AngularJS - Javascript framework for superheroes
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        title AngularJS - Javascript framework for superheroes
 
-    // build:css styles/styles.css
-    //- Check out 'src/bower_components/prism/themes/' for available themes
-    link(rel='stylesheet', type='text/css', href='bower_components/prism/themes/prism-tomorrow.css')
-    link(rel='stylesheet', type='text/css', href='styles/main.css')
-    // endbuild
+        // build:css styles/styles.css
+        //- Check out 'src/bower_components/prism/themes/' for available themes
+        link(rel='stylesheet', type='text/css', href='bower_components/prism/themes/prism-tomorrow.css')
+        link(rel='stylesheet', type='text/css', href='styles/main.css')
+        // endbuild
 
-  body
+    body(ng-app='Presentation')
 
-    article
+        article
 
-      section.dd-homepage
-        div.dd-homepage-logo
-          div.dd-homepage-logo-bg
-          div.dd-homepage-logo-write
-        h1.dd-homepage-title AngularJS - Javascript framework for superheroes
+            section.dd-homepage
+                div.dd-homepage-logo
+                    div.dd-homepage-logo-bg
+                    div.dd-homepage-logo-write
+                h1.dd-homepage-title AngularJS - Javascript framework for superheroes
 
-      section.dd-section
-        div.dd-section-background
-        div.dd-section-logo
-        h2.dd-title Back in time...
-        h3 ... when the dinosaurs rule the Earth
-        div.js-horizontal-box
-          ul
-            li Websites instead of webapps
-            li Client seen as a dumb interface
-            li All the workload handled by the server
-            li No client-side logic
-            li Javascript coders seen as web designers
-          img.js-old(src='images/slides/old.jpg')
+            section.dd-section
+                div.dd-section-logo
+                h2.dd-title Back in time...
+                h3 ... when the dinosaurs rule the Earth
+                div.js-horizontal-box
+                    ul
+                        li Websites instead of webapps
+                        li Client seen as a dumb interface
+                        li All the workload handled by the server
+                        li No client-side logic
+                        li Javascript coders seen as web designers
+                    img.js-old(src='images/slides/old.jpg')
 
-      section.dd-section
-        div.dd-section-background
-        div.dd-section-logo
-        h2.dd-title Get into present days...
-        hr
-        img.js-html5(src='images/slides/html5.jpg')
-        ul
-          li AJAX - HTML5 - CSS3
-          li Web 2.0
-          li Client splitted from server
-          li Lots of new Javascript libraries
-          li Web application
+            section.dd-section
+                div.dd-section-logo
+                h2.dd-title Get into present days...
+                hr
+                img.js-html5(src='images/slides/html5.jpg')
+                ul
+                    li AJAX - HTML5 - CSS3
+                    li Web 2.0
+                    li Client splitted from server
+                    li Lots of new Javascript libraries
+                    li Web application
 
-      section.dd-section
-        div.dd-section-background
-        div.dd-section-logo
-        h2.dd-title Javascript: the answer!
-        hr
-        div.js-horizontal-box
-          img.js-old(src='images/slides/napdino.jpg')
-          ul
-            li Javascript framework
-            li MVC Architecture
-            li Big web apps
+            section.dd-section
+                div.dd-section-logo
+                h2.dd-title Javascript: the answer!
+                hr
+                div.js-horizontal-box
+                    img.js-old(src='images/slides/napdino.jpg')
+                    ul
+                        li Javascript framework
+                        li MVC Architecture
+                        li Big web apps
 
-      section.dd-section
-        div.dd-section-background
-        div.dd-section-logo
-        h2.dd-title A current problem
-        hr
-        div.js-horizontal-box
-          img.js-old(src='images/slides/dafaq.png')
-          ul
-            li Too much time
-            li Too much code
-            li Too much stress
-            li Building client-side webapp is still hard
-            li DOM Manipulation
-            li Data validation
+            section.dd-section
+                div.dd-section-logo
+                h2.dd-title A current problem
+                hr
+                div.js-horizontal-box
+                    img.js-old(src='images/slides/dafaq.png')
+                    ul
+                        li Too much time
+                        li Too much code
+                        li Too much stress
+                        li Building client-side webapp is still hard
+                        li DOM Manipulation
+                        li Data validation
 
-      section.dd-section
-        div.dd-section-background
-        div.dd-section-logo
-        h2.dd-title Angular for the win!
-        hr
-        ul
-          li Data-binding
-          li Basic templating directives
-          li Form validation
-          li Routing
-          li Reusable components
-          li Dependency injection
-          li Unit-testing
-        div.js-horizontal-box
-          img(src='images/slides/superdino.png',style='width:200px')
-          img(src='images/slides/superdino.png',style='width:200px')
-          img(src='images/slides/superdino.png',style='width:200px')
+            section.dd-section
+                div.dd-section-logo
+                h2.dd-title Angular for the win!
+                hr
+                ul
+                    li Data-binding
+                    li Basic templating directives
+                    li Form validation
+                    li Routing
+                    li Reusable components
+                    li Dependency injection
+                    li Unit-testing
+                div.js-horizontal-box
+                    img(src='images/slides/superdino.png',style='width:200px')
+                    img(src='images/slides/superdino.png',style='width:200px')
+                    img(src='images/slides/superdino.png',style='width:200px')
 
-      section.dd-section
-        div.dd-section-background
-        div.dd-section-logo
-        h2.dd-title Bootstrapping
-        hr
-        div.js-horizontal-box
-          img.js-old(src='images/slides/dafaq.png')
-          ul
-            li Load HTML DOM
-            li Load the module associated with the directive
-            li Create the application injector
-            li Compile the DOM treating the ng-app directive as the root of the compilation
+            section.dd-section
+                div.dd-section-logo
+                h2.dd-title Bootstrapping
+                hr
+                div.js-horizontal-box
+                    img.js-old(src='images/slides/dafaq.png')
+                    ul
+                        li Load HTML DOM
+                        li Load the module associated with the directive
+                        li Create the application injector
+                        li Compile the DOM treating the ng-app directive as the root of the compilation
 
-      section.dd-section
-        div.dd-section-background
-        div.dd-section-logo
-        h2.dd-title Conceptual overview
-        hr
-        div.js-horizontal-box
-          ol
-            li The browser loads the HTML and parses it into a DOM
-            li The browser loads angular.js script
-            li Angular waits for DOMContentLoaded event
-            li Angular looks for ng-app directive, which designates the application boundary
-            li The Module specified in ng-app (if any) is used to configure the $injector
-            li The $injector is used to create the $compile service as well as $rootScope
-            li The $compile service is used to compile the DOM and link it with $rootScope
-          img.js-old(src='images/slides/concepts-view.png')
+            section.dd-section
+                div.dd-section-logo
+                h2.dd-title Conceptual overview
+                hr
+                div.js-horizontal-box
+                    ol
+                        li The browser loads the HTML and parses it into a DOM
+                        li The browser loads angular.js script
+                        li Angular waits for DOMContentLoaded event
+                        li Angular looks for ng-app directive, which designates the application boundary
+                        li The Module specified in ng-app (if any) is used to configure the $injector
+                        li The $injector is used to create the $compile service as well as $rootScope
+                        li The $compile service is used to compile the DOM and link it with $rootScope
+                    img.js-old(src='images/slides/concepts-startup.png')
 
-      section.dd-section
-        div.dd-section-background
-        div.dd-section-logo
-        h2.dd-title HTML Compiler
-        h3 Compiler is an angular service which traverses the DOM looking for attributes
-        ul
-          li Compile: traverse the DOM and collect all of the directives. The result is a linking function
-          li Link: combine the directives with a scope and produce a live view. Any changes in the scope model are reflected in the view, and any user interactions with the view are reflected in the scope model. This makes the scope model the single source of truth
+            section.dd-section
+                div.dd-section-logo
+                h2.dd-title HTML Compiler
+                h3 Compiler is an angular service which traverses the DOM looking for attributes
+                ul
+                    li Compile: traverse the DOM and collect all of the directives. The result is a linking function
+                    li Link: combine the directives with a scope and produce a live view. Any changes in the scope model are reflected in the view, and any user interactions with the view are reflected in the scope model. This makes the scope model the single source of truth
 
-      section.dd-section
-        div.dd-section-background
-        div.dd-section-logo
-        h2.dd-title Conceptual overview
-        h3 Also knows as Model View - View Model (MVVM)
-        hr
-        div.js-horizontal-box
-          img.js-old(src='images/slides/One_Way_Data_Binding.png')
-          img.js-old(src='images/slides/Two_Way_Data_Binding.png')
+            section.dd-section
+                div.dd-section-logo
+                h2.dd-title Conceptual overview
+                h3 Also knows as Model View - View Model (MVVM)
+                hr
+                div.js-horizontal-box
+                    img.js-old(src='images/slides/One_Way_Data_Binding.png')
+                    img.js-old(src='images/slides/Two_Way_Data_Binding.png')
 
-      section.dd-speaker
-        div.dd-speaker-box
-          div.dd-speaker-pic
-          div.dd-speaker-detail
-            div.dd-speaker-detail-container
-              h3.dd-title Vincenzo Ferrari
+            section.dd-section
+                div.dd-section-logo
+                h2.dd-title Scope & View
+                hr
+                p The scope is responsible for detecting changes to the model section and provides the execution context for expressions
+                div.js-horizontal-box
+                    p The browser parses the HTML into the DOM, and the DOM becomes the input to the template engine known as the compiler. The compiler looks for directives which in turn set up watches on the model. The result is a continuously updating view which does not need template model re-merging. Your model becomes the single source-of-truth for your view.
+                    img.js-old(src='images/slides/concepts-view.png')
 
-    // build:js scripts/scripts.js
-    script(src='bower_components/bespoke.js/dist/bespoke.min.js')
-    script(src='bower_components/bespoke-keys/dist/bespoke-keys.min.js')
-    script(src='bower_components/bespoke-touch/dist/bespoke-touch.min.js')
-    script(src='bower_components/bespoke-bullets/dist/bespoke-bullets.min.js')
-    script(src='bower_components/bespoke-scale/dist/bespoke-scale.min.js')
-    script(src='bower_components/bespoke-hash/dist/bespoke-hash.min.js')
-    script(src='bower_components/bespoke-progress/dist/bespoke-progress.min.js')
-    script(src='bower_components/bespoke-state/dist/bespoke-state.min.js')
-    script(src='bower_components/bespoke-forms/dist/bespoke-forms.min.js')
-    script(src='bower_components/prism/prism.js')
-    script(src='scripts/main.js')
-    // endbuild
+            section.dd-section
+                div.dd-section-logo
+                h2.dd-title Example Code
+                hr
+                pre
+                    code(ng-non-bindable).language-javascript.
+                      &lt;input type="text" ng-model="yourName" placeholder="Enter a name here"&gt;
+                      &lt;h1&gt;Hello {{yourName}}!&lt;/h1&gt;
+
+            section.dd-section
+                div.dd-section-logo
+                h2.dd-title Example Live
+                hr
+                input(type="text", ng-model="yourName", placeholder="Enter a name here")
+                hr
+                p Hello {{yourName}}!
+
+            section.dd-section
+                div.dd-section-logo
+                h2.dd-title Directives
+                hr
+                p A directive is a behavior or DOM transformation which is triggered by the presence of a custom attribute, element name, or a class name. A directive allows you to extend the HTML vocabulary in a declarative fashion
+
+            section.dd-section
+                div.dd-section-logo
+                h2.dd-title Directives example
+                hr
+                div(ng-controller="DirectiveController")
+                    div(my-customer)
+                pre
+                    code(ng-non-bindable).language-javascript.
+                      angular.module('Presentation', [])
+                          .controller('Controller', ['$scope', function($scope) {
+                              $scope.customer = {
+                                  name: 'Naomi',
+                                  address: '1600 Amphitheatre'
+                              };
+                          }])
+                          .directive('myCustomer', function() {
+                              return {
+                                  template: 'Name: {{customer.name}} Address: {{customer.address}}'
+                              };
+                          });
+
+            section.dd-section
+                div.dd-section-logo
+                h2.dd-title Filters
+                hr
+                p Filters perform data transformation. Typically they are used in conjunction with the locale to format the data in locale specific output. They follow the spirit of UNIX filters and use similar syntax | (pipe)
+
+            section.dd-section
+                div.dd-section-logo
+                h2.dd-title Filters example
+                hr
+                div Negative number: {{-10.15392 | number:2}}
+                div Your name (in lowercase): {{"Wilk" | lowercase}}
+                pre
+                    code(ng-non-bindable).language-javascript.
+                      // $scope.val = -10.15792;
+                      // $scope.user = {name: 'Wilk'};
+                      &lt;div&gt;Negative number: {{val | number:2}}&lt;/div&gt;
+                      &lt;div&gt;Your name (in lowercase): {{user.name | lowercase}}&lt;/div&gt;
+
+            section.dd-section
+                div.dd-section-logo
+                h2.dd-title Client-side routing
+                hr
+                p $route is used for deep-linking URLs to controllers and views (HTML partials). It watches $location.url() and tries to map the path to an existing route definition.
+                  You can define routes through $routeProvider's API.
+                p The $route service is typically used in conjunction with the ngView directive and the $routeParams service.
+
+            section.dd-section
+                div.dd-section-logo
+                h2.dd-title Routing example
+                hr
+                pre
+                    code(ng-non-bindable).language-javascript.
+                      angular.module('MyApp', ['ngRoute'])
+                          .config(['$routeProvider', function ($routeProvider) {
+                              $routeProvider
+                                  .when('/user/:id', {
+                                      templateUrl: 'views/user.html',
+                                      controller: 'UserController'
+                                  });
+                          })
+                          .controller('UserController', ['$scope', '$route', function ($scope, $route) {
+                              $scope.userId = $route.current.params.id;
+                          });
+
+            section.dd-section
+                div.dd-section-logo
+                h2.dd-title Services
+                hr
+                p Angular services are substitutable objects that are wired together using dependency injection (DI). You can use services to organize and share code across your app.
+                p Angular services are:
+                p Lazily instantiated: Angular only instantiates a service when an application component depends on it
+                p Singletons: Each component dependent on a service gets a reference to the single instance generated by the service factory
+                p Angular offers several useful services (like $http), but for most applications you'll also want to create your own.
+
+            section.dd-section
+                div.dd-section-logo
+                h2.dd-title Services example
+                hr
+                div(ng-controller="ServiceController")
+                    input(type="text" ng-init="message='Wilk'" ng-model="message")
+                    button(ng-click="notify(message)") Notify
+                pre
+                    code(ng-non-bindable).language-javascript.
+                      angular.module('Presentation', [])
+                          .service('notify', ['$window', function (window) {
+                              var msgs = [];
+                              return function (msg) {
+                                  msgs.push(msg);
+                                  if (msgs.length > 2) {
+                                      window.alert(msgs);
+                                      msgs = [];
+                                  }
+                              };
+                          })
+                          .controller('ServiceController', ['$scope', 'notify', function ($scope, notify) {
+                              $scope.notify = notify;
+                          });
+
+                      &lt;div ng-controller="ServiceController"&gt;
+                          &lt;input type="text" ng-init="message='Wilk'" ng-model="message"/&gt;
+                          &lt;button ng-click="notify(message)") Notify&lt;/button&gt;
+                      &lt;/div&gt;
+
+            section.dd-section
+                div.dd-section-logo
+                h2.dd-title Form
+                hr
+                p Form is simply a group of controls. Angular gives state to each of them, such as pristine, dirty, valid, invalid
+                p Angular form creates an instance of FormController. FormController itself has methods and properties:
+                ul
+                    li formName.$pristine: TRUE if the user has not interacted with the form yet
+                    li formName.$dirty: TRUE if the user has already interacted with the form.
+                    li formName.$valid: TRUE if all containing form and controls are valid
+                    li formName.$invalid: TRUE if at least one containing form and control is invalid.
+                    li formName.$error: Is an object hash, containing references to all invalid controls or forms
+
+            section.dd-section
+                div.dd-section-logo
+                h2.dd-title Form states
+                hr
+                p It is important to understand flow of the form states in order to use angular form properly. This flow gives you visualization of the form state from the very first time the form is rendered until the user has finished filling the form
+                ul
+                    li Flow 1 : pristine and invalid - When the form is first rendered and the user has not interacted with the form yet.
+                    li Flow 2 : dirty and invalid - User has interacted with the form, but validity has not been satisfied, yet
+                    li Flow 3 : dirty and valid - User has finished filling the form and all the validation rule has been satisfied
+
+            section.dd-section
+                div.dd-section-logo
+                h2.dd-title Services example
+                hr
+                div(ng-controller="ServiceController")
+                    input(type="text" ng-init="message='Wilk'" ng-model="message")
+                    button(ng-click="notify(message)") Notify
+                pre
+                    code(ng-non-bindable).language-javascript.
+                      angular.module('Presentation', [])
+                          .service('notify', ['$window', function (window) {
+                              var msgs = [];
+                              return function (msg) {
+                                  msgs.push(msg);
+                                  if (msgs.length > 2) {
+                                      window.alert(msgs);
+                                      msgs = [];
+                                  }
+                              };
+                          })
+                          .controller('ServiceController', ['$scope', 'notify', function ($scope, notify) {
+                              $scope.notify = notify;
+                          });
+
+                      &lt;div ng-controller="ServiceController"&gt;
+                          &lt;input type="text" ng-init="message='Wilk'" ng-model="message"/&gt;
+                          &lt;button ng-click="notify(message)") Notify&lt;/button&gt;
+                      &lt;/div&gt;
+
+            section.dd-speaker
+                div.dd-speaker-box
+                    div.dd-speaker-pic
+                    div.dd-speaker-detail
+                        div.dd-speaker-detail-container
+                            h3.dd-title Vincenzo Ferrari
+
+        // build:js scripts/scripts.js
+        script(src='bower_components/angular/angular.min.js')
+        script(src='bower_components/bespoke.js/dist/bespoke.min.js')
+        script(src='bower_components/bespoke-keys/dist/bespoke-keys.min.js')
+        script(src='bower_components/bespoke-touch/dist/bespoke-touch.min.js')
+        script(src='bower_components/bespoke-bullets/dist/bespoke-bullets.min.js')
+        script(src='bower_components/bespoke-scale/dist/bespoke-scale.min.js')
+        script(src='bower_components/bespoke-hash/dist/bespoke-hash.min.js')
+        script(src='bower_components/bespoke-progress/dist/bespoke-progress.min.js')
+        script(src='bower_components/bespoke-state/dist/bespoke-state.min.js')
+        script(src='bower_components/bespoke-forms/dist/bespoke-forms.min.js')
+        script(src='bower_components/prism/prism.js')
+        script(src='scripts/main.js')
+        // endbuild
