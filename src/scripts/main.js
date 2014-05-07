@@ -18,7 +18,7 @@ angular.module('Presentation', [])
     }])
     .directive('myCustomer', function () {
         return {
-            template: 'Name: {{customer.name}} Address: {{customer.address}}'
+            template: '<b>Name</b>: {{customer.name}} <b>Address</b>: {{customer.address}}'
         };
     })
     .controller('ServiceController', ['$scope', 'notify', function ($scope, notify) {
@@ -37,13 +37,13 @@ angular.module('Presentation', [])
     }])
     .controller('FormController', ['$scope', function ($scope) {
         $scope.master = {};
-        $scope.update = function(user) {
+        $scope.update = function (user) {
             $scope.master = angular.copy(user);
         };
-        $scope.reset = function() {
+        $scope.reset = function () {
             $scope.user = angular.copy($scope.master);
         };
-        $scope.isUnchanged = function(user) {
+        $scope.isUnchanged = function (user) {
             return angular.equals(user, $scope.master);
         };
         $scope.reset();
