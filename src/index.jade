@@ -23,6 +23,59 @@ html
 
             section.dd-section
                 div.dd-section-logo
+                h2.dd-title Sponsors
+                hr
+                ul
+                    li.dd-sponsors.organizer
+                        a(href="http://www.ibuildings.nl", target="_blank") http://www.ibuildings.nl
+                        figure
+                            img(src="images/sponsors/logo-ibuildings.jpg", alt="Ibuildings organiser")
+                    li.dd-sponsors.silver
+                        a(href="http://commerceguys.com", target="_blank") http://commerceguys.com
+                        figure
+                            img(src="images/sponsors/commerce.png", alt="Commerce Guys")
+                    li.dd-sponsors.silver
+                        a(href="http://www.dotcom.ts.it", target="_blank") http://www.dotcom.ts.it
+                        figure
+                            img(src="images/sponsors/logo.png", alt="Dotcom")
+                    li.dd-sponsors.silver
+                        a(href="http://www.jetbrains.com", target="_blank") http://www.jetbrains.com
+                        figure
+                            img(src="images/sponsors/logojetbrains_0.jpg", alt="JetBrains")
+                    li.dd-sponsors.social
+                        a(href="http://www.colorsprint.it", target="_blank") http://www.colorsprint.it
+                        figure
+                            img(src="images/sponsors/marchio.jpg", alt="ColorSprint")
+                    li.dd-sponsors.social
+                        a(href="http://milano.talentgarden.org", target="_blank") http://milano.talentgarden.org
+                        figure
+                            img(src="images/sponsors/Logo_TalentGarden_Milano_0.png", alt="Talent Garden")
+                hr
+                h2.dd-title Media Partners
+                ul
+                    li.dd-sponsors
+                        a(href="http://programmazione.it", target="_blank") http://programmazione.it
+                        figure
+                            img(src="images/sponsors/logo_1.png", alt="Programmazione.it")
+                    li.dd-sponsors
+                        a(href="http://www.drupalitalia.org", target="_blank") http://www.drupalitalia.org
+                        figure
+                            img(src="images/sponsors/Drupalitalia_0.png", alt="Associazione Drupal Italia")
+                    li.dd-sponsors
+                        a(href="http://www.architecta.it", target="_blank") http://www.architecta.it
+                        figure
+                            img(src="images/sponsors/Logo_Architecta_0.png", alt="Architecta")
+                    li.dd-sponsors
+                        a(href="http://uxbookclub.it/8/id_95/incontro-del-9-5-milano-uxbookclub", target="_blank") http://uxbookclub.it/8/id_95/incontro-del-9-5-milano-uxbookclub
+                        figure
+                            img(src="images/sponsors/2C6C411E-4D54-45E6-84CF-76BCDA569758.jpg", alt="UX Bookclub")
+                    li.dd-sponsors
+                        a(href="http://www.hubme.in", target="_blank") http://www.hubme.in
+                        figure
+                            img(src="images/sponsors/logo_0.png", alt="Hubme")
+
+            section.dd-section
+                div.dd-section-logo
                 h2.dd-title Back in time...
                 h3 ... when the dinosaurs rule the Earth
                 div.js-horizontal-box
@@ -136,7 +189,7 @@ html
                 hr
                 p The scope is responsible for detecting changes to the model section and provides the execution context for expressions
                 div.js-horizontal-box
-                    div(style='text-align:left;width:480px;margin-top:50px') The browser parses the HTML into the DOM, and the DOM becomes the input to the template engine known as the compiler. The compiler looks for directives which in turn set up watches on the model. The result is a continuously updating view which does not need template model re-merging. Your model becomes the single source-of-truth for your view.
+                    div(style='text-align:left;width:480px;margin-top:50px;margin-left:10px') The browser parses the HTML into the DOM, and the DOM becomes the input to the template engine known as the compiler. The compiler looks for directives which in turn set up watches on the model. The result is a continuously updating view which does not need template model re-merging. Your model becomes the single source-of-truth for your view.
                     img.js-scope-image(src='images/slides/concepts-view.png')
 
             section.dd-section
@@ -177,7 +230,7 @@ html
 
                         // HTML
                         &lt;div ng-controller="DirectiveController"&gt;
-                            &lt;div my-customer&gt;
+                            &lt;div my-customer&gt;&lt;/div&gt;
                         &lt;/div&gt;
                 div(ng-controller="DirectiveController", style='margin-top: 20px')
                     div(my-customer)
@@ -315,8 +368,8 @@ html
                           &lt;input type="checkbox" ng-model="user.agree"
                                  name="userAgree" required/&gt;
                           I agree&lt;br/&gt;
-                          &lt;div ng-show="!user.agree || !user.agreeSign"&gt;
-                            Please agree and sign.
+                          &lt;div ng-show="!user.agree"&gt;
+                            Please agree.
                           &lt;/div&gt;
                           &lt;button ng-click="reset()" ng-disabled="isUnchanged(user)"&gt;
                             RESET
@@ -430,59 +483,6 @@ html
                                 li <span class="small-icon octicon-github"></span> <a href="https://github.com/wilk">github.com/wilk</a>
                                 li <span class="small-icon octicon-fork"></span> <a href="https://github.com/wilk/AngularJS-Javascript-framework-for-superheroes">fork slides</a>
                                 li <span class="small-icon octicon-demo"></span> <a href="http://wilk.github.io/AngularJS-Javascript-framework-for-superheroes/">live slides</a>
-
-            section.dd-section
-                div.dd-section-logo
-                h2.dd-title Sponsors
-                hr
-                ul
-                    li.dd-sponsors.organizer
-                        a(href="http://www.ibuildings.nl", target="_blank") http://www.ibuildings.nl
-                        figure
-                            img(src="images/sponsors/logo-ibuildings.jpg", alt="Ibuildings organiser")
-                    li.dd-sponsors.silver
-                        a(href="http://commerceguys.com", target="_blank") http://commerceguys.com
-                        figure
-                            img(src="images/sponsors/commerce.png", alt="Commerce Guys")
-                    li.dd-sponsors.silver
-                        a(href="http://www.dotcom.ts.it", target="_blank") http://www.dotcom.ts.it
-                        figure
-                            img(src="images/sponsors/logo.png", alt="Dotcom")
-                    li.dd-sponsors.silver
-                        a(href="http://www.jetbrains.com", target="_blank") http://www.jetbrains.com
-                        figure
-                            img(src="images/sponsors/logojetbrains_0.jpg", alt="JetBrains")
-                    li.dd-sponsors.social
-                        a(href="http://www.colorsprint.it", target="_blank") http://www.colorsprint.it
-                        figure
-                            img(src="images/sponsors/marchio.jpg", alt="ColorSprint")
-                    li.dd-sponsors.social
-                        a(href="http://milano.talentgarden.org", target="_blank") http://milano.talentgarden.org
-                        figure
-                            img(src="images/sponsors/Logo_TalentGarden_Milano_0.png", alt="Talent Garden")
-                hr
-                h2.dd-title Media Partners
-                ul
-                    li.dd-sponsors
-                        a(href="http://programmazione.it", target="_blank") http://programmazione.it
-                        figure
-                            img(src="images/sponsors/logo_1.png", alt="Programmazione.it")
-                    li.dd-sponsors
-                        a(href="http://www.drupalitalia.org", target="_blank") http://www.drupalitalia.org
-                        figure
-                            img(src="images/sponsors/Drupalitalia_0.png", alt="Associazione Drupal Italia")
-                    li.dd-sponsors
-                        a(href="http://www.architecta.it", target="_blank") http://www.architecta.it
-                        figure
-                            img(src="images/sponsors/Logo_Architecta_0.png", alt="Architecta")
-                    li.dd-sponsors
-                        a(href="http://uxbookclub.it/8/id_95/incontro-del-9-5-milano-uxbookclub", target="_blank") http://uxbookclub.it/8/id_95/incontro-del-9-5-milano-uxbookclub
-                        figure
-                            img(src="images/sponsors/2C6C411E-4D54-45E6-84CF-76BCDA569758.jpg", alt="UX Bookclub")
-                    li.dd-sponsors
-                        a(href="http://www.hubme.in", target="_blank") http://www.hubme.in
-                        figure
-                            img(src="images/sponsors/logo_0.png", alt="Hubme")
 
         // build:js scripts/scripts.js
         script(src='bower_components/angular/angular.min.js')
