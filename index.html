@@ -17,6 +17,50 @@
       </section>
       <section class="dd-section">
         <div class="dd-section-logo"></div>
+        <h2 class="dd-title">Sponsors</h2>
+        <hr>
+        <ul>
+          <li class="dd-sponsors organizer"><a href="http://www.ibuildings.nl" target="_blank">http://www.ibuildings.nl</a>
+            <figure><img src="images/sponsors/logo-ibuildings.jpg" alt="Ibuildings organiser"></figure>
+          </li>
+          <li class="dd-sponsors silver"><a href="http://commerceguys.com" target="_blank">http://commerceguys.com</a>
+            <figure><img src="images/sponsors/commerce.png" alt="Commerce Guys"></figure>
+          </li>
+          <li class="dd-sponsors silver"><a href="http://www.dotcom.ts.it" target="_blank">http://www.dotcom.ts.it</a>
+            <figure><img src="images/sponsors/logo.png" alt="Dotcom"></figure>
+          </li>
+          <li class="dd-sponsors silver"><a href="http://www.jetbrains.com" target="_blank">http://www.jetbrains.com</a>
+            <figure><img src="images/sponsors/logojetbrains_0.jpg" alt="JetBrains"></figure>
+          </li>
+          <li class="dd-sponsors social"><a href="http://www.colorsprint.it" target="_blank">http://www.colorsprint.it</a>
+            <figure><img src="images/sponsors/marchio.jpg" alt="ColorSprint"></figure>
+          </li>
+          <li class="dd-sponsors social"><a href="http://milano.talentgarden.org" target="_blank">http://milano.talentgarden.org</a>
+            <figure><img src="images/sponsors/Logo_TalentGarden_Milano_0.png" alt="Talent Garden"></figure>
+          </li>
+        </ul>
+        <hr>
+        <h2 class="dd-title">Media Partners</h2>
+        <ul>
+          <li class="dd-sponsors"><a href="http://programmazione.it" target="_blank">http://programmazione.it</a>
+            <figure><img src="images/sponsors/logo_1.png" alt="Programmazione.it"></figure>
+          </li>
+          <li class="dd-sponsors"><a href="http://www.drupalitalia.org" target="_blank">http://www.drupalitalia.org</a>
+            <figure><img src="images/sponsors/Drupalitalia_0.png" alt="Associazione Drupal Italia"></figure>
+          </li>
+          <li class="dd-sponsors"><a href="http://www.architecta.it" target="_blank">http://www.architecta.it</a>
+            <figure><img src="images/sponsors/Logo_Architecta_0.png" alt="Architecta"></figure>
+          </li>
+          <li class="dd-sponsors"><a href="http://uxbookclub.it/8/id_95/incontro-del-9-5-milano-uxbookclub" target="_blank">http://uxbookclub.it/8/id_95/incontro-del-9-5-milano-uxbookclub</a>
+            <figure><img src="images/sponsors/2C6C411E-4D54-45E6-84CF-76BCDA569758.jpg" alt="UX Bookclub"></figure>
+          </li>
+          <li class="dd-sponsors"><a href="http://www.hubme.in" target="_blank">http://www.hubme.in</a>
+            <figure><img src="images/sponsors/logo_0.png" alt="Hubme"></figure>
+          </li>
+        </ul>
+      </section>
+      <section class="dd-section">
+        <div class="dd-section-logo"></div>
         <h2 class="dd-title">Back in time...</h2>
         <h3>... when the dinosaurs rule the Earth</h3>
         <div class="js-horizontal-box">
@@ -132,7 +176,7 @@
         <hr>
         <p>The scope is responsible for detecting changes to the model section and provides the execution context for expressions</p>
         <div class="js-horizontal-box">
-          <div style="text-align:left;width:480px;margin-top:50px">The browser parses the HTML into the DOM, and the DOM becomes the input to the template engine known as the compiler. The compiler looks for directives which in turn set up watches on the model. The result is a continuously updating view which does not need template model re-merging. Your model becomes the single source-of-truth for your view.</div><img src="images/slides/concepts-view.png" class="js-scope-image">
+          <div style="text-align:left;width:480px;margin-top:50px;margin-left:10px">The browser parses the HTML into the DOM, and the DOM becomes the input to the template engine known as the compiler. The compiler looks for directives which in turn set up watches on the model. The result is a continuously updating view which does not need template model re-merging. Your model becomes the single source-of-truth for your view.</div><img src="images/slides/concepts-view.png" class="js-scope-image">
         </div>
       </section>
       <section class="dd-section">
@@ -169,7 +213,7 @@
     
 // HTML
 &lt;div ng-controller="DirectiveController"&gt;
-    &lt;div my-customer&gt;
+    &lt;div my-customer&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
         <div ng-controller="DirectiveController" style="margin-top: 20px">
           <div my-customer></div>
@@ -304,8 +348,8 @@
     &lt;input type="checkbox" ng-model="user.agree"
            name="userAgree" required/&gt;
     I agree&lt;br/&gt;
-    &lt;div ng-show="!user.agree || !user.agreeSign"&gt;
-      Please agree and sign.
+    &lt;div ng-show="!user.agree"&gt;
+      Please agree.
     &lt;/div&gt;
     &lt;button ng-click="reset()" ng-disabled="isUnchanged(user)"&gt;
       RESET
@@ -416,50 +460,6 @@ expect($scope.strength).toEqual('weak');
             </div>
           </div>
         </div>
-      </section>
-      <section class="dd-section">
-        <div class="dd-section-logo"></div>
-        <h2 class="dd-title">Sponsors</h2>
-        <hr>
-        <ul>
-          <li class="dd-sponsors organizer"><a href="http://www.ibuildings.nl" target="_blank">http://www.ibuildings.nl</a>
-            <figure><img src="images/sponsors/logo-ibuildings.jpg" alt="Ibuildings organiser"></figure>
-          </li>
-          <li class="dd-sponsors silver"><a href="http://commerceguys.com" target="_blank">http://commerceguys.com</a>
-            <figure><img src="images/sponsors/commerce.png" alt="Commerce Guys"></figure>
-          </li>
-          <li class="dd-sponsors silver"><a href="http://www.dotcom.ts.it" target="_blank">http://www.dotcom.ts.it</a>
-            <figure><img src="images/sponsors/logo.png" alt="Dotcom"></figure>
-          </li>
-          <li class="dd-sponsors silver"><a href="http://www.jetbrains.com" target="_blank">http://www.jetbrains.com</a>
-            <figure><img src="images/sponsors/logojetbrains_0.jpg" alt="JetBrains"></figure>
-          </li>
-          <li class="dd-sponsors social"><a href="http://www.colorsprint.it" target="_blank">http://www.colorsprint.it</a>
-            <figure><img src="images/sponsors/marchio.jpg" alt="ColorSprint"></figure>
-          </li>
-          <li class="dd-sponsors social"><a href="http://milano.talentgarden.org" target="_blank">http://milano.talentgarden.org</a>
-            <figure><img src="images/sponsors/Logo_TalentGarden_Milano_0.png" alt="Talent Garden"></figure>
-          </li>
-        </ul>
-        <hr>
-        <h2 class="dd-title">Media Partners</h2>
-        <ul>
-          <li class="dd-sponsors"><a href="http://programmazione.it" target="_blank">http://programmazione.it</a>
-            <figure><img src="images/sponsors/logo_1.png" alt="Programmazione.it"></figure>
-          </li>
-          <li class="dd-sponsors"><a href="http://www.drupalitalia.org" target="_blank">http://www.drupalitalia.org</a>
-            <figure><img src="images/sponsors/Drupalitalia_0.png" alt="Associazione Drupal Italia"></figure>
-          </li>
-          <li class="dd-sponsors"><a href="http://www.architecta.it" target="_blank">http://www.architecta.it</a>
-            <figure><img src="images/sponsors/Logo_Architecta_0.png" alt="Architecta"></figure>
-          </li>
-          <li class="dd-sponsors"><a href="http://uxbookclub.it/8/id_95/incontro-del-9-5-milano-uxbookclub" target="_blank">http://uxbookclub.it/8/id_95/incontro-del-9-5-milano-uxbookclub</a>
-            <figure><img src="images/sponsors/2C6C411E-4D54-45E6-84CF-76BCDA569758.jpg" alt="UX Bookclub"></figure>
-          </li>
-          <li class="dd-sponsors"><a href="http://www.hubme.in" target="_blank">http://www.hubme.in</a>
-            <figure><img src="images/sponsors/logo_0.png" alt="Hubme"></figure>
-          </li>
-        </ul>
       </section>
     </article>
     <script src="scripts/scripts.js"></script>
