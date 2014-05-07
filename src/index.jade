@@ -19,24 +19,24 @@ html
                 div.dd-homepage-logo
                     div.dd-homepage-logo-bg
                     div.dd-homepage-logo-write
-                h1.dd-homepage-title AngularJS - Javascript framework for superheroes
+                h1.dd-homepage-title <span class="js-angular-a">A</span>ngularJS - Javascript framework for superheroes
 
             section.dd-section
                 div.dd-section-logo
                 h2.dd-title Back in time...
                 h3 ... when the dinosaurs rule the Earth
                 div.js-horizontal-box
-                    ul
+                    ul(style="margin-top:50px")
                         li Websites instead of webapps
                         li Client seen as a dumb interface
                         li All the workload handled by the server
                         li No client-side logic
                         li Javascript coders seen as web designers
-                    img.js-old(src='images/slides/old.jpg')
+                    img.js-right-image(src='images/slides/old.jpg')
 
             section.dd-section
                 div.dd-section-logo
-                h2.dd-title Get into present days...
+                h2.dd-title Getting into present days...
                 hr
                 img.js-html5(src='images/slides/html5.jpg')
                 ul
@@ -51,8 +51,8 @@ html
                 h2.dd-title Javascript: the answer!
                 hr
                 div.js-horizontal-box
-                    img.js-old(src='images/slides/napdino.jpg')
-                    ul
+                    img.js-left-image(src='images/slides/napdino.jpg')
+                    ul(style='margin-top:100px')
                         li Javascript framework
                         li MVC Architecture
                         li Big web apps
@@ -62,8 +62,8 @@ html
                 h2.dd-title A current problem
                 hr
                 div.js-horizontal-box
-                    img.js-old(src='images/slides/dafaq.png')
-                    ul
+                    img.js-left-image(src='images/slides/dafaq.png')
+                    ul(style='margin-top:20px')
                         li Too much time
                         li Too much code
                         li Too much stress
@@ -75,7 +75,7 @@ html
                 div.dd-section-logo
                 h2.dd-title Angular for the win!
                 hr
-                ul
+                ul(style='margin-bottom: 50px')
                     li Data-binding
                     li Basic templating directives
                     li Form validation
@@ -84,53 +84,51 @@ html
                     li Dependency injection
                     li Unit-testing
                 div.js-horizontal-box
-                    img(src='images/slides/superdino.png',style='width:200px')
-                    img(src='images/slides/superdino.png',style='width:200px')
-                    img(src='images/slides/superdino.png',style='width:200px')
+                    img.js-bottom-image(src='images/slides/superdino.png')
+                    img.js-bottom-image(src='images/slides/angular.png',style='margin: 0 55px')
+                    img.js-bottom-image(src='images/slides/superdino.png')
 
             section.dd-section
                 div.dd-section-logo
                 h2.dd-title Bootstrapping
                 hr
-                div.js-horizontal-box
-                    img.js-old(src='images/slides/dafaq.png')
-                    ul
-                        li Load HTML DOM
-                        li Load the module associated with the directive
-                        li Create the application injector
-                        li Compile the DOM treating the ng-app directive as the root of the compilation
+                ul
+                    li Load HTML DOM
+                    li Load the module associated with the directive
+                    li Create the application injector
+                    li Compile the DOM treating the ng-app directive as the root of the compilation
 
             section.dd-section
                 div.dd-section-logo
-                h2.dd-title Conceptual overview
+                h2.dd-title Conceptual Overview
                 hr
                 div.js-horizontal-box
-                    ol
+                    ol(style='text-align:left')
                         li The browser loads the HTML and parses it into a DOM
-                        li The browser loads angular.js script
-                        li Angular waits for DOMContentLoaded event
-                        li Angular looks for ng-app directive, which designates the application boundary
-                        li The Module specified in ng-app (if any) is used to configure the $injector
-                        li The $injector is used to create the $compile service as well as $rootScope
-                        li The $compile service is used to compile the DOM and link it with $rootScope
-                    img.js-old(src='images/slides/concepts-startup.png')
+                        li The browser loads <em>angular.js</em> script
+                        li Angular waits for <em>DOMContentLoaded</em> event
+                        li Angular looks for <em>ng-app</em> directive, which designates the application boundary
+                        li The Module specified in <em>ng-app</em> (if any) is used to configure the <em>$injector</em>
+                        li The <em>$injector</em> is used to create the <em>$compile</em> service as well as <em>$rootScope</em>
+                        li The <em>$compile</em> service is used to compile the DOM and link it with <em>$rootScope</em>
+                    img(style='margin-left:10px; width:341px; height:230px; margin-top:40px',src='images/slides/concepts-startup.png')
 
             section.dd-section
                 div.dd-section-logo
                 h2.dd-title HTML Compiler
                 h3 Compiler is an angular service which traverses the DOM looking for attributes
                 ul
-                    li Compile: traverse the DOM and collect all of the directives. The result is a linking function
-                    li Link: combine the directives with a scope and produce a live view. Any changes in the scope model are reflected in the view, and any user interactions with the view are reflected in the scope model. This makes the scope model the single source of truth
+                    li <span class="js-angular-strong">Compile</span>: traverse the DOM and collect all of the directives. The result is a linking function
+                    li <span class="js-angular-strong">Link</span>: combine the directives with a scope and produce a live view. Any changes in the scope model are reflected in the view, and any user interactions with the view are reflected in the scope model. This makes the scope model the single source of truth
 
             section.dd-section
                 div.dd-section-logo
-                h2.dd-title Conceptual overview
+                h2.dd-title Conceptual Overview
                 h3 Also knows as Model View - View Model (MVVM)
                 hr
                 div.js-horizontal-box
-                    img.js-old(src='images/slides/One_Way_Data_Binding.png')
-                    img.js-old(src='images/slides/Two_Way_Data_Binding.png')
+                    img.js-mvvm-image(src='images/slides/One_Way_Data_Binding.png',style='margin-right:10px')
+                    img.js-mvvm-image(src='images/slides/Two_Way_Data_Binding.png')
 
             section.dd-section
                 div.dd-section-logo
@@ -138,24 +136,18 @@ html
                 hr
                 p The scope is responsible for detecting changes to the model section and provides the execution context for expressions
                 div.js-horizontal-box
-                    p The browser parses the HTML into the DOM, and the DOM becomes the input to the template engine known as the compiler. The compiler looks for directives which in turn set up watches on the model. The result is a continuously updating view which does not need template model re-merging. Your model becomes the single source-of-truth for your view.
-                    img.js-old(src='images/slides/concepts-view.png')
+                    div(style='text-align:left;width:480px;margin-top:50px') The browser parses the HTML into the DOM, and the DOM becomes the input to the template engine known as the compiler. The compiler looks for directives which in turn set up watches on the model. The result is a continuously updating view which does not need template model re-merging. Your model becomes the single source-of-truth for your view.
+                    img.js-scope-image(src='images/slides/concepts-view.png')
 
             section.dd-section
                 div.dd-section-logo
                 h2.dd-title Example Code
                 hr
-                pre
+                pre.dd-section-code
                     code(ng-non-bindable).language-javascript.
-                      &lt;input type="text" ng-model="yourName" placeholder="Enter a name here"&gt;
-                      &lt;h1&gt;Hello {{yourName}}!&lt;/h1&gt;
-
-            section.dd-section
-                div.dd-section-logo
-                h2.dd-title Example Live
-                hr
-                input(type="text", ng-model="yourName", placeholder="Enter a name here")
-                hr
+                        &lt;input type="text" ng-model="yourName" placeholder="Enter a name here"&gt;
+                        &lt;h1&gt;Hello {{yourName}}!&lt;/h1&gt;
+                input(type="text", ng-model="yourName", placeholder="Enter a name here", style='margin: 30px 0 10px 0')
                 p Hello {{yourName}}!
 
             section.dd-section
@@ -166,24 +158,29 @@ html
 
             section.dd-section
                 div.dd-section-logo
-                h2.dd-title Directives example
+                h2.dd-title Directives Example
                 hr
-                div(ng-controller="DirectiveController")
-                    div(my-customer)
-                pre
+                pre.dd-section-code
                     code(ng-non-bindable).language-javascript.
-                      angular.module('Presentation', [])
-                          .controller('Controller', ['$scope', function($scope) {
-                              $scope.customer = {
-                                  name: 'Naomi',
-                                  address: '1600 Amphitheatre'
-                              };
-                          }])
-                          .directive('myCustomer', function() {
-                              return {
-                                  template: 'Name: {{customer.name}} Address: {{customer.address}}'
-                              };
-                          });
+                        angular.module('Presentation', [])
+                            .controller('DirectiveController', ['$scope', function ($scope) {
+                                $scope.customer = {
+                                    name: 'Naomi',
+                                    address: '1600 Amphitheatre'
+                                };
+                            }])
+                            .directive('myCustomer', function () {
+                                return {
+                                    template: '<b>Name</b>: {{customer.name}} <b>Address</b>: {{customer.address}}'
+                                };
+                            });
+
+                        // HTML
+                        &lt;div ng-controller="DirectiveController"&gt;
+                            &lt;div my-customer&gt;
+                        &lt;/div&gt;
+                div(ng-controller="DirectiveController", style='margin-top: 20px')
+                    div(my-customer)
 
             section.dd-section
                 div.dd-section-logo
@@ -193,30 +190,30 @@ html
 
             section.dd-section
                 div.dd-section-logo
-                h2.dd-title Filters example
+                h2.dd-title Filters Example
                 hr
-                div Negative number: {{-10.15392 | number:2}}
-                div Your name (in lowercase): {{"Wilk" | lowercase}}
-                pre
+                pre.dd-section-code
                     code(ng-non-bindable).language-javascript.
-                      // $scope.val = -10.15792;
-                      // $scope.user = {name: 'Wilk'};
-                      &lt;div&gt;Negative number: {{val | number:2}}&lt;/div&gt;
+                      &lt;div&gt;Formatted number: {{val | number:2}}&lt;/div&gt;
                       &lt;div&gt;Your name (in lowercase): {{user.name | lowercase}}&lt;/div&gt;
+                input(type="number", ng-model="val", style='margin: 30px 0 10px 0')
+                div Formatted number: {{val | number:2}}
+                input(type="text", ng-model="user.name", placeholder="Enter a name here", style='margin: 30px 0 10px 0')
+                div Your name (in lowercase): {{user.name | lowercase}}
 
             section.dd-section
                 div.dd-section-logo
-                h2.dd-title Client-side routing
+                h2.dd-title Client-Side Routing
                 hr
-                p $route is used for deep-linking URLs to controllers and views (HTML partials). It watches $location.url() and tries to map the path to an existing route definition.
-                  You can define routes through $routeProvider's API.
-                p The $route service is typically used in conjunction with the ngView directive and the $routeParams service.
+                p <span class="js-angular-strong">$route</span> is used for deep-linking URLs to controllers and views (HTML partials).
+                p It watches <span class="js-angular-strong">$location.url()</span> and tries to map the path to an existing route definition. You can define routes through <span class="js-angular-strong">$routeProvider</span>'s API.
+                p The $route service is typically used in conjunction with the <span class="js-angular-strong">ngView</span> directive and the <span class="js-angular-strong">$routeParams</span> service.
 
             section.dd-section
                 div.dd-section-logo
-                h2.dd-title Routing example
+                h2.dd-title Routing Example
                 hr
-                pre
+                pre.dd-section-code
                     code(ng-non-bindable).language-javascript.
                       angular.module('MyApp', ['ngRoute'])
                           .config(['$routeProvider', function ($routeProvider) {
@@ -230,107 +227,122 @@ html
                               $scope.userId = $route.current.params.id;
                           });
 
-            section.dd-section
+            section.dd-section(style='text-align: left')
                 div.dd-section-logo
                 h2.dd-title Services
                 hr
                 p Angular services are substitutable objects that are wired together using dependency injection (DI). You can use services to organize and share code across your app.
                 p Angular services are:
-                p Lazily instantiated: Angular only instantiates a service when an application component depends on it
-                p Singletons: Each component dependent on a service gets a reference to the single instance generated by the service factory
-                p Angular offers several useful services (like $http), but for most applications you'll also want to create your own.
+                p <span class="js-angular-strong">Lazily instantiated</span>: Angular only instantiates a service when an application component depends on it
+                p <span class="js-angular-strong">Singletons</span>: Each component dependent on a service gets a reference to the single instance generated by the service factory
+                p Angular offers several useful services (like <span class="js-angular-strong">$http</span>), but for most applications you'll also want to create your own.
 
             section.dd-section
                 div.dd-section-logo
-                h2.dd-title Services example
+                h2.dd-title Services Example
                 hr
+                pre.dd-section-code(style='margin-top: 20px')
+                    code(ng-non-bindable).language-javascript.
+                        angular.module('Presentation', [])
+                            .service('notify', ['$window', function (window) {
+                                var msgs = [];
+                                return function (msg) {
+                                    msgs.push(msg);
+                                    if (msgs.length > 2) {
+                                        window.alert(msgs);
+                                        msgs = [];
+                                    }
+                                };
+                            })
+                            .controller('ServiceController', ['$scope', 'notify',
+                                function ($scope, notify) {
+                                    $scope.notify = notify;
+                            });
+
+                        // HTML
+                        &lt;div ng-controller="ServiceController"&gt;
+                            &lt;input type="text" ng-init="message='Wilk'" ng-model="message"/&gt;
+                            &lt;button ng-click="notify(message)") Notify&lt;/button&gt;
+                        &lt;/div&gt;
                 div(ng-controller="ServiceController")
                     input(type="text" ng-init="message='Wilk'" ng-model="message")
                     button(ng-click="notify(message)") Notify
-                pre
-                    code(ng-non-bindable).language-javascript.
-                      angular.module('Presentation', [])
-                          .service('notify', ['$window', function (window) {
-                              var msgs = [];
-                              return function (msg) {
-                                  msgs.push(msg);
-                                  if (msgs.length > 2) {
-                                      window.alert(msgs);
-                                      msgs = [];
-                                  }
-                              };
-                          })
-                          .controller('ServiceController', ['$scope', 'notify', function ($scope, notify) {
-                              $scope.notify = notify;
-                          });
 
-                      &lt;div ng-controller="ServiceController"&gt;
-                          &lt;input type="text" ng-init="message='Wilk'" ng-model="message"/&gt;
-                          &lt;button ng-click="notify(message)") Notify&lt;/button&gt;
-                      &lt;/div&gt;
-
-            section.dd-section
+            section.dd-section(style='text-align:left')
                 div.dd-section-logo
                 h2.dd-title Form
                 hr
-                p Form is simply a group of controls. Angular gives state to each of them, such as pristine, dirty, valid, invalid
-                p Angular form creates an instance of FormController. FormController itself has methods and properties:
+                p(style='margin: 0 0 10px 0') Form is simply a group of controls. Angular gives state to each of them, such as <span class="js-angular-form-pristine">pristine</span>, <span class="js-angular-form-dirty">dirty</span>, <span class="js-angular-form-valid">valid</span>, <span class="js-angular-form-invalid">invalid</span>
+                p(style='margin: 0 0 10px 0') Angular form creates an instance of <span class="js-angular-strong">FormController</span>. FormController itself has methods and properties:
                 ul
-                    li formName.$pristine: TRUE if the user has not interacted with the form yet
-                    li formName.$dirty: TRUE if the user has already interacted with the form.
-                    li formName.$valid: TRUE if all containing form and controls are valid
-                    li formName.$invalid: TRUE if at least one containing form and control is invalid.
-                    li formName.$error: Is an object hash, containing references to all invalid controls or forms
+                    li <span class="js-angular-form-pristine">formName.$pristine</span>: TRUE if the user has not interacted with the form yet
+                    li <span class="js-angular-form-dirty">formName.$dirty</span>: TRUE if the user has already interacted with the form.
+                    li <span class="js-angular-form-valid">formName.$valid</span>: TRUE if all containing form and controls are valid
+                    li <span class="js-angular-form-invalid">formName.$invalid</span>: TRUE if at least one containing form and control is invalid.
+                    li <span class="js-angular-form-error">formName.$error</span>: Is an object hash, containing references to all invalid controls or forms
+
+            section.dd-section(style='text-align:left')
+                div.dd-section-logo
+                h2.dd-title Form States
+                hr
+                p(style='margin: 0 0 10px 0') It is important to understand flow of the form states in order to use angular form properly. This flow gives you visualization of the form state from the very first time the form is rendered until the user has finished filling the form
+                ul
+                    li <span class="js-angular-strong">Flow 1:</span> <span class="js-angular-form-pristine">pristine and invalid</span> - When the form is first rendered and the user has not interacted with the form yet.
+                    li <span class="js-angular-strong">Flow 2:</span> <span class="js-angular-form-invalid">dirty and invalid</span> - User has interacted with the form, but validity has not been satisfied, yet
+                    li <span class="js-angular-strong">Flow 3:</span> <span class="js-angular-form-valid">dirty and valid</span> - User has finished filling the form and all the validation rule has been satisfied
 
             section.dd-section
                 div.dd-section-logo
-                h2.dd-title Form states
+                h2.dd-title Form Example (HTML)
                 hr
-                p It is important to understand flow of the form states in order to use angular form properly. This flow gives you visualization of the form state from the very first time the form is rendered until the user has finished filling the form
-                ul
-                    li Flow 1 : pristine and invalid - When the form is first rendered and the user has not interacted with the form yet.
-                    li Flow 2 : dirty and invalid - User has interacted with the form, but validity has not been satisfied, yet
-                    li Flow 3 : dirty and valid - User has finished filling the form and all the validation rule has been satisfied
-
-            section.dd-section
-                div.dd-section-logo
-                h2.dd-title Form example (HTML)
-                hr
-                pre
+                pre.dd-section-code
                     code(ng-non-bindable).language-javascript.
                       &lt;div ng-controller="FormController"&gt;
                         &lt;form name="form" class="css-form" novalidate&gt;
                           Name:
-                            &lt;input type="text" ng-model="user.name" name="uName" required /&gt;&lt;br /&gt;
-                          E-mail:
-                            &lt;input type="email" ng-model="user.email" name="uEmail" required/&gt;&lt;br /&gt;
+                          &lt;input type="text" ng-model="user.name" name="uName" required/&gt;
+                          &lt;br/&gt;E-mail:
+                          &lt;input type="email" ng-model="user.email" name="uEmail" required/&gt;
+                          &lt;br/&gt;
                           &lt;div ng-show="form.uEmail.$dirty && form.uEmail.$invalid"&gt;Invalid:
-                            &lt;span ng-show="form.uEmail.$error.required"&gt;Tell us your email.&lt;/span&gt;
-                            &lt;span ng-show="form.uEmail.$error.email"&gt;This is not a valid email.&lt;/span&gt;
+                            &lt;span ng-show="form.uEmail.$error.required"&gt;
+                                Tell us your email.
+                            &lt;/span&gt;
+                            &lt;span ng-show="form.uEmail.$error.email"&gt;
+                                This is not a valid email.
+                            &lt;/span&gt;
                           &lt;/div&gt;
-                          &lt;input type="checkbox" ng-model="user.agree" name="userAgree" required /&gt;
-                          I agree&lt;br /&gt;
-                          &lt;div ng-show="!user.agree || !user.agreeSign">Please agree and sign.&lt;/div&gt;
-                          &lt;button ng-click="reset()" ng-disabled="isUnchanged(user)"&gt;RESET&lt;/button&gt;
-                          &lt;button ng-click="update(user)" ng-disabled="form.$invalid || isUnchanged(user)"&gt;SAVE&lt;/button&gt;
+                          &lt;input type="checkbox" ng-model="user.agree"
+                                 name="userAgree" required/&gt;
+                          I agree&lt;br/&gt;
+                          &lt;div ng-show="!user.agree || !user.agreeSign"&gt;
+                            Please agree and sign.
+                          &lt;/div&gt;
+                          &lt;button ng-click="reset()" ng-disabled="isUnchanged(user)"&gt;
+                            RESET
+                          &lt;/button&gt;
+                          &lt;button ng-click="update(user)"
+                                  ng-disabled="form.$invalid || isUnchanged(user)"&gt;
+                            SAVE
+                          &lt;/button&gt;
                         &lt;/form&gt;
                       &lt;/div&gt;
 
             section.dd-section
                 div.dd-section-logo
-                h2.dd-title Form example (JS)
+                h2.dd-title Form Example (Javascript)
                 hr
-                pre
+                pre.dd-section-code
                     code(ng-non-bindable).language-javascript.
-                      function FormController($scope) {
+                      function FormController ($scope) {
                         $scope.master = {};
-                        $scope.update = function(user) {
+                        $scope.update = function (user) {
                           $scope.master = angular.copy(user);
                         };
-                        $scope.reset = function() {
+                        $scope.reset = function () {
                           $scope.user = angular.copy($scope.master);
                         };
-                        $scope.isUnchanged = function(user) {
+                        $scope.isUnchanged = function (user) {
                           return angular.equals(user, $scope.master);
                         };
                         $scope.reset();
@@ -338,7 +350,7 @@ html
 
             section.dd-section
                 div.dd-section-logo
-                h2.dd-title Form live example
+                h2.dd-title Form Live Example
                 hr
                 div(ng-controller="FormController")
                     form(name="form",class="css-form",novalidate) Name:
@@ -353,26 +365,26 @@ html
                         input(type="checkbox", ng-model="user.agree", name="userAgree", required)
                         span I agree
                         br
-                        div(ng-show="!user.agree || !user.agreeSign") Please agree and sign.
+                        div(ng-show="!user.agree") Please agree.
                         button(ng-click="reset()", ng-disabled="isUnchanged(user)") RESET
                         button(ng-click="update(user)", ng-disabled="form.$invalid || isUnchanged(user)") SAVE
 
             section.dd-section
                 div.dd-section-logo
-                h2.dd-title Unit testing
+                h2.dd-title Unit Testing
                 hr
                 p Unit testing as the name implies is about testing individual units of code. What makes each application unique is its logic, and the logic is what we would like to test. If the logic for your application contains DOM manipulation, it will be hard to test. In angular the controllers are strictly separated from the DOM manipulation logic and this results in a much easier testability story.
-                p AngularJS uses Jasmine as unit testing and end2end framework
+                p AngularJS uses <span class="js-angular-strong">Jasmine</span> as unit testing and E2E framework
 
             section.dd-section
                 div.dd-section-logo
                 h2.dd-title Unit testing example
                 hr
-                pre
+                pre.dd-section-code
                     code.language-javascript.
-                        function PasswordCtrl($scope) {
+                        function PasswordCtrl ($scope) {
                           $scope.password = '';
-                          $scope.grade = function() {
+                          $scope.grade = function () {
                             var size = $scope.password.length;
                             if (size > 8) {
                               $scope.strength = 'strong';
@@ -385,7 +397,7 @@ html
                         }
 
                         var $scope = {};
-                        var pc = $controller('PasswordCtrl', { $scope: $scope });
+                        var pc = $controller('PasswordCtrl', {$scope: $scope});
                         $scope.password = 'abc';
                         $scope.grade();
                         expect($scope.strength).toEqual('weak');
@@ -395,12 +407,12 @@ html
                 h2.dd-title E2E testing example
                 hr
                 p It's quite easy to test services, directives, filters, controllers, etc with AngularJS and Jasmine
-                pre
+                pre.dd-section-code
                     code.language-javascript.
-                        describe('service', function() {
+                        describe('service', function () {
                           beforeEach(module('myApp.services'));
-                          describe('version', function() {
-                            it('should return current version', inject(function(version) {
+                          describe('version', function () {
+                            it('should return current version', inject(function (version) {
                               expect(version).toEqual('0.1');
                             }));
                           });
@@ -412,6 +424,12 @@ html
                     div.dd-speaker-detail
                         div.dd-speaker-detail-container
                             h3.dd-title Vincenzo Ferrari
+                            ul(style='text-align: left; margin-left: 25px')
+                                li <span class="small-icon octicon-mail"></span> <a href="mailto:vincenzo@ibuildings.it">vincenzo@ibuildings.it</a>
+                                li <span class="small-icon octicon-twitter"></span> <a href="https://twitter.com/__wilky__">@__wilky__</a>
+                                li <span class="small-icon octicon-github"></span> <a href="https://github.com/wilk">github.com/wilk</a>
+                                li <span class="small-icon octicon-fork"></span> <a href="https://github.com/wilk/AngularJS-Javascript-framework-for-superheroes">fork slides</a>
+                                li <span class="small-icon octicon-demo"></span> <a href="http://wilk.github.io/AngularJS-Javascript-framework-for-superheroes/">live slides</a>
 
         // build:js scripts/scripts.js
         script(src='bower_components/angular/angular.min.js')
