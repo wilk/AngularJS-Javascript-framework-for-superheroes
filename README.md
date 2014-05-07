@@ -1,16 +1,18 @@
-# Bespoke slide template for [**DrupalDays**](http://milano2014.drupaldays.it) event
+# HTML5 AngularJS slideshow for [**DrupalDays**](http://milano2014.drupaldays.it) event
 > A [Bespoke.js](http://markdalgleish.com/projects/bespoke.js) presentation, built with [generator-bespoke](https://github.com/markdalgleish/generator-bespoke)
+
+Original template: [**https://github.com/IbuildingsItaly/drupal-days-slides-template**](https://github.com/IbuildingsItaly/drupal-days-slides-template)
 
 ## Usage
 
-Fork the repo, rename as you want and then clone it locally:
+Clone the repo locally:
 
 ```bash
-$ git clone https://<your_new_forked_repo>
-$ cd <your_new_forked_repo>
+$ git clone https://github.com/wilk/AngularJS-Javascript-framework-for-superheroes
+$ cd AngularJS-Javascript-framework-for-superheroes
 ```
 
-Ensure you have the following installed:
+Ensure you have the following packes installed:
 
 1. [Node.js](http://nodejs.org)
 2. [Bower](http://bower.io): `$ npm install -g bower`
@@ -30,13 +32,13 @@ Now, use Grunt to develop and deploy your slides:
 
 ## Demo
 
-Demo here: [**http://IbuildingsItaly.github.io/drupal-days-slides-template**](http://IbuildingsItaly.github.io/drupal-days-slides-template)
+Demo here: [**http://wilk.github.io/AngularJS-Javascript-framework-for-superheroes**](http://wilk.github.io/AngularJS-Javascript-framework-for-superheroes)
 
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2014 Ibuildings SRL
+Copyright (c) 2014 Vincenzo Ferrari
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
