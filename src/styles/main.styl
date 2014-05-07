@@ -3,7 +3,7 @@
 
 // variables!
 
-slide_width = 640px
+slide_width = 840px
 slide_height = 480px
 slide_background = #ededed
 
@@ -16,6 +16,8 @@ slide_transition_nudge_x = -100px
 bullet_transition_length = .3s
 bullet_transition_easing = ease
 bullet_transition_translate_x = 16px
+
+angular-text-color = rgb(177, 41, 41)
 
 // base
 
@@ -158,6 +160,7 @@ pre
 
 // Import of drupaldays stylesheets
 @import 'drupaldays'
+@import 'octicons'
 
 // content styles
 
@@ -201,11 +204,57 @@ a
   color: #0089f3
   text-decoration: none
 
-.js-old
+.js-angular-a
+  color: angular-text-color
+  font-size: 1.4em
+
+.js-right-image
   width: 260px
+  margin-left: 20px
+
+.js-left-image
+  width: 260px
+  margin-right: 20px
+
+.js-bottom-image
+  width: 150px
+
+.js-mvvm-image
+  width: 400px
+  height: 260px
+
+.js-scope-image
+  width: 357px
+  height: 310px
+  margin-left: 20px
 
 .js-horizontal-box
   display: inline-flex
 
 .js-html5
   width: 570px
+  margin-bottom: 20px
+
+.js-angular-strong
+  font-weight: bold
+  color: angular-text-color
+
+.js-angular-form-pristine
+  font-weight: bold
+  color: #7d8080
+
+.js-angular-form-dirty
+  font-weight: bold
+  color: #393f41
+
+.js-angular-form-valid
+  font-weight: bold
+  color: #048031
+
+.js-angular-form-invalid
+  font-weight: bold
+  color: #805e17
+
+.js-angular-form-error
+  font-weight: bold
+  color: #803029
