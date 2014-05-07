@@ -322,13 +322,13 @@ pre {
   display: inline-flex;
 }
 .dd-speaker-pic {
-  width: 300px;
+  width: 285px;
   height: 300px;
   background-image: url("../images/speaker/pic.png");
-  background-repeat: repeat;
-  -webkit-background-size: 300px 300px;
-  -moz-background-size: 300px 300px;
-  background-size: 300px 300px;
+  background-repeat: no-repeat;
+  -webkit-background-size: 285px 300px;
+  -moz-background-size: 285px 300px;
+  background-size: 285px 300px;
   -webkit-box-shadow: 3px 3px 4px -1px;
   box-shadow: 3px 3px 4px -1px;
   margin-right: 10px;
