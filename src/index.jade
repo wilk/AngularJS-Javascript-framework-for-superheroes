@@ -224,7 +224,7 @@ html
                             }])
                             .directive('myCustomer', function () {
                                 return {
-                                    template: '<b>Name</b>: {{customer.name}} <b>Address</b>: {{customer.address}}'
+                                    template: '&lt;b&gt;Name&lt;/b&gt;: {{customer.name}} &lt;b&gt;Address&lt;/b&gt;: {{customer.address}}'
                                 };
                             });
 
@@ -314,11 +314,11 @@ html
 
                         // HTML
                         &lt;div ng-controller="ServiceController"&gt;
-                            &lt;input type="text" ng-init="message='Wilk'" ng-model="message"/&gt;
+                            &lt;input type="text" ng-init="message='Developers'" ng-model="message"/&gt;
                             &lt;button ng-click="notify(message)") Notify&lt;/button&gt;
                         &lt;/div&gt;
                 div(ng-controller="ServiceController")
-                    input(type="text" ng-init="message='Wilk'" ng-model="message")
+                    input(type="text" ng-init="message='Developers'" ng-model="message")
                     button(ng-click="notify(message)") Notify
 
             section.dd-section(style='text-align:left')
